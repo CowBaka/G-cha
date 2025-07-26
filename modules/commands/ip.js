@@ -13,7 +13,7 @@ module.exports.run = async function({ api, args, event, __GLOBAL }) {
   const timeStart = Date.now();
   
     const axios = require("axios");
-  if (!args[0]) {api.sendMessage("❎ Vui lòng nhập ip bạn muốn kiểm tra",event.threadID, event.messageID);}
+  if (!args[0]) {api.sendMessage("Ip : gachaminne.online\nVersion:1.21+",event.threadID, event.messageID);}
   else {
 var infoip = (await axios.get(`http://ip-api.com/json/${args.join(' ')}?fields=66846719`)).data;
        if (infoip.status == 'fail')
