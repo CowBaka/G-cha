@@ -17,5 +17,5 @@ module.exports.run = async function({ api, args, Users, event }) {
   var phut = moment.tz("Asia/Ho_Chi_Minh").format("mm");
   var giay = moment.tz("Asia/Ho_Chi_Minh").format("ss");
   let name = await Users.getNameUser(event.senderID);
-  if (args.length == 0) api.sendMessage(`Bot đang khởi động lại, sẽ hoạt động sau 5 giây nữa nhoaaa !!`, threadID, () => process.exit(1));
+  if (args.length == 0) api.sendMessage(`[ Mod ]Bot đang reset , vui lòng đợi\n• /rs | by FurinDev - Support for GachaMine !!`, threadID, () => process.exit(1));
 }
