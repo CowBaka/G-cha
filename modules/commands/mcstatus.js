@@ -18,7 +18,7 @@ this.run = async function ({ args, api, event }) {
   const send = msg => api.sendMessage(msg, event.threadID, event.messageID);
 
   if (!vhks || !hks) {
-    return send(`Check Minecraft Status Server\nUsage: ${this.config.usages}`, event.threadID);
+    return send(`[ Gachamine ] Kiểm Tra trạng thái của 1 server\nUsage: ${this.config.usages}`, event.threadID);
   }
 
   try {
@@ -40,7 +40,7 @@ this.run = async function ({ args, api, event }) {
     const c = motd.clean || "Not Data!";
     const d = gamemode || "Not Data!";
 
-    send(`Check Minecraft Status Server\nMinecraft: [ Java/Bedrock ]\nOnline: ${online}\nServer: ${host}:${port}\nHost: ${host}\nPort: ${port}\nActive Players: ${a}\nMax Players: ${b}\nServer Name: ${c}\nVersion: ${serverVersion.name}\nGamemode: ${d}`,
+    send(`Kiểm Tra Trạng Thái...\nMinecraft: [ Java/Bedrock ]\nOnline: ${online}\nServer: ${host}:${port}\nHost: ${host}\nPort: ${port}\nOnline Players: ${a}\nMax Players: ${b}\nTên Server: ${c}\nVersion: ${serverVersion.name}\nKiểm Tra bởi Furin Dev | •/mcstatus java <ip>`,
       event.threadID
     );
   } catch (error) {
