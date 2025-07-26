@@ -24,7 +24,7 @@ module.exports.handleEvent = async function({ api, event, Users }) {
         delete busyData[senderID];
         fs.writeFileSync(busyPath, JSON.stringify(busyData, null, 4));
         return api.sendMessage(`Chào mừng bạn đã quay trở lại! 🥰`, threadID, () => {
-            if (info.tag.length == 0) api.sendMessage("Trong lúc bạn đi vắng, không có ai nhắc đến bạn cả", threadID);
+            if (info.tag.length == 0) api.sendMessage("Trong lúc bạn đi vắng, không có ai nhắc đến bạn cả\n• /afk   | by FurinDev ", threadID);
             else {
                 var msg = "";
                 for (var i of info.tag) {
