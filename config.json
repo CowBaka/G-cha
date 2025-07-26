@@ -14,20 +14,20 @@
     "eventDisabled": [],
     "autoClean": true,
     "ACCESSTOKEN": "",
-    "BOTNAME": "Krystal [BETA]",
+    "BOTNAME": "GachaMine Bot - Build by Furin",
     "AMDIN_NAME": "Điền tên bạn vào đây",
-    "FACEBOOK_ADMIN": "https://www.facebook.com/100018277053087",
-    "PREFIX": "/",
+    "FACEBOOK_ADMIN": "",
+    "PREFIX": ".",
     "LOGIN": {
         "EMAIL": "",
         "PASSWORD": "",
         "OTPKEY": ""
     },
     "ADMINBOT": [
-        "100018277053087"
+        "100091244094670"
     ],
     "NDH": [
-        "100018277053087"
+        "100091244094670"
     ],
     "DATABASE": {
         "sqlite": {
