@@ -59,7 +59,7 @@ module.exports.run = async function({ api, event, args, Users }) {
             tag: []
         }
         fs.writeFileSync(busyPath, JSON.stringify(busyData, null, 4));
-        var msg = (content.length == 0) ? 'Bạn đã bật chế độ afk mà không có lí do' : `Bạn đã bật chế độ afk với lí do: ${content}`;
+        var msg = (content.length == 0) ? '[ Gachamine ]Bạn đã bật chế độ afk mà không có lí do' : `[ GachaMine ]Bạn đã bật chế độ afk với lí do: ${content}`;
         return api.sendMessage(msg, threadID, messageID);
     }
 }
