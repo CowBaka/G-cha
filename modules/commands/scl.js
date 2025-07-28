@@ -38,7 +38,7 @@ module.exports.config = {
   description: 'Tìm kiếm nhạc trên SoundCloud',
   commandCategory: 'Tìm kiếm',
   usages: '[]',
-  cooldowns: 5,
+  cooldowns: 90,
   images: [],
 };
 
