@@ -13,7 +13,7 @@ module.exports.run = async function({ api, args, event, __GLOBAL }) {
   const timeStart = Date.now();
   
     const axios = require("axios");
-  if (!args[0]) {api.sendMessage("Ip : gachaminne.online\nPort Pe:19132\nVersion : 1.21.4 / 1.21.7+\n•.ip | by GachaMine Server",event.threadID, event.messageID);}
+  if (!args[0]) {api.sendMessage("Ip : gachaminne.online\nPort Pe:19132\nVersion : 1.21.4+ / 1.21.70-1.21.94\n•.ip | by GachaMine Server",event.threadID, event.messageID);}
   else {
 var infoip = (await axios.get(`http://ip-api.com/json/${args.join(' ')}?fields=66846719`)).data;
        if (infoip.status == 'fail')
